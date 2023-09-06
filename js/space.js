@@ -13,10 +13,11 @@ function showData(data) {
 
         const div = document.createElement("div");
         div.classList.add("card");
+       div.setAttribute("style", "width: 20rem; height: 20rem;")
 
         const img = document.createElement("img");
         img.src = item.links[0].href;
-        img.classList.add("card-img-top");
+        div.classList.add("card-img-top");
         div.appendChild(img);
 
         const body = document.createElement("div");
